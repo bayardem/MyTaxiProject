@@ -1,0 +1,16 @@
+{
+	"name": "linkedservicetosqlserverdb",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=teamprojectsqlserver.database.windows.net;initial catalog=YellowTaxiDB;user id=dssadmin",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIxY2JkZDY3Yi02ZDhlLTQ2YmMtOWRkYy1hMGE0NDc0ZjdiMjQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "projectintegrationselfhosted",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
